@@ -6,7 +6,7 @@
 # catalog-version 0.3
 Name:		texlive-smartdiagram
 Version:	0.3
-Release:	2
+Release:	3
 Summary:	Generate diagrams from lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/smartdiagram
