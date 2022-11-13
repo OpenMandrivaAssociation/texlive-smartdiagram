@@ -1,19 +1,13 @@
-# revision 30046
-# category Package
-# catalog-ctan /graphics/pgf/contrib/smartdiagram
-# catalog-date 2013-04-02 02:01:45 +0200
-# catalog-license lppl1.3
-# catalog-version 0.3
 Name:		texlive-smartdiagram
-Version:	0.3b
-Release:	2
+Version:	42781
+Release:	1
 Summary:	Generate diagrams from lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/smartdiagram
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ The package will create 'smart' diagrams from lists of items,
 for simple documents and for presentations.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,7 +40,8 @@ for simple documents and for presentations.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
