@@ -1,6 +1,6 @@
 Name:		texlive-smartdiagram
 Version:	42781
-Release:	1
+Release:	2
 Summary:	Generate diagrams from lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/smartdiagram
