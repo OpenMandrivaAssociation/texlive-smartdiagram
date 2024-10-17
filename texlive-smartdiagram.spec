@@ -3,7 +3,7 @@ Version:	42781
 Release:	2
 Summary:	Generate diagrams from lists
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/smartdiagram
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/smartdiagram
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartdiagram.doc.r%{version}.tar.xz
